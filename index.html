@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b14" />
+  <meta name="description" content="Nexus Uploader — simple, fast file sharing." />
+  <title>Nexus Uploader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="glow glow-a"></div><div class="glow glow-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">N</span><span>NEXUS<span class="muted">.</span></span></a>
+    <span class="secure"><span class="dot"></span> Secure file sharing</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="spark">✦</span> SIMPLE FILE SHARING</div>
+      <h1>Send files.<br><span>Not complications.</span></h1>
+      <p class="sub">Drop your files, upload in seconds, and share a link with anyone.</p>
+      <div class="upload-card">
+        <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Choose files or drop them here">
+          <div class="upload-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M4 15.5v3A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5v-3"/></svg></div>
+          <h2>Drop files here</h2>
+          <p>or <button id="browse" class="text-button" type="button">browse files</button> from your device</p>
+          <span class="file-hint">Maximum file size: 100 MB per file</span>
+          <input id="fileInput" type="file" multiple hidden />
+        </div>
+        <div id="queue" class="queue" aria-live="polite"></div>
+        <div class="card-footer"><span> <span class="lock">▣</span> Your files are uploaded to secure cloud storage</span><span> NEXUS UPLOADER</span></div>
+      </div>
+      <div class="features">
+        <div><span class="feature-icon">↗</span><b>Quick sharing</b><small>One link to share</small></div>
+        <div><span class="feature-icon">⇧</span><b>Easy uploads</b><small>Drag, drop, done</small></div>
+        <div><span class="feature-icon">◇</span><b>Any file type</b><small>Share what you need</small></div>
+      </div>
+    </section>
+  </main>
+  <footer>Made for sharing <span>·</span> Nexus Uploader</footer>
+  <script type="module" src="/src.js"></script>
+</body>
+</html>
