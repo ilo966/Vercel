@@ -1,3 +1,4 @@
+
 {
   "name": "nexus-uploader",
   "version": "1.0.0",
@@ -9,8 +10,6 @@
   },
   "dependencies": {
     "@vercel/blob": "^1.1.1",
-    "@vercel/blob/client": "^1.1.1",
     "vite": "^6.1.0"
-  },
-  "devDependencies": {}
+  }
 }
